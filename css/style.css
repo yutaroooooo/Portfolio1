@@ -25,13 +25,13 @@ img {
 ヘッダー
 -------------------------------------------------*/
 .logo {
-    width: 90px;
+    width: 80px;
     margin-top: 14px;
 }
 
 .main-nav {
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-top: 34px;
     list-style: none;
@@ -48,10 +48,11 @@ img {
 .page-header {
     display: flex;
     justify-content: space-between;
+    margin: 0 200px 0 200px;
 }
 
 .wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0.4%;
+    padding: 0 4%;
 }
