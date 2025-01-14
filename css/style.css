@@ -56,3 +56,25 @@ img {
     margin: 0 auto;
     padding: 0 4%;
 }
+/*------------------------------------------------
+メインビジュアル
+-------------------------------------------------*/
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    padding-left: 400px;
+    padding-top: 90px;
+}
+
+.main-visual img {
+    width: 550px;
+}
+
+/*------------------------------------------------
+背景画像
+-------------------------------------------------*/
+
+#home {
+    background-image: url(../img/background.png);
+    min-height: 90vh;
+}
