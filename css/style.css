@@ -117,3 +117,26 @@ img {
     height: auto;
     will-change: transform; 
 }
+
+
+/* コンテナが全画面に広がるように設定 */
+.container3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 470px;
+    perspective: 1000px; /* 3D効果を持たせるための視点を設定 */
+}
+
+/* 画像の位置と回転のアニメーション */
+.graphic3 {
+    position: absolute;
+    width: 200px; /* 画像のサイズを調整 */
+    height: auto;
+    will-change: transform; /* パフォーマンス向上のために設定 */
+    transform: rotate(-125deg);
+    transform-style: preserve-3d; /* 3D変換を適用 */
+}
