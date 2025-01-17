@@ -56,6 +56,10 @@ img {
     margin: 0 auto;
     padding: 0 4%;
 }
+
+a:hover {
+    color: #8F87AB;
+  }
 /*------------------------------------------------
 メインビジュアル
 -------------------------------------------------*/
@@ -89,6 +93,16 @@ img {
 }
 
 #about-home {
+    background-image: url(../img/background2.png);
+    min-height: 90vh;
+}
+
+#works-home {
+    background-image: url(../img/background2.png);
+    min-height: 90vh;
+}
+
+#contact-home {
     background-image: url(../img/background2.png);
     min-height: 90vh;
 }
