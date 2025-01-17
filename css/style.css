@@ -70,12 +70,26 @@ img {
     width: 100%;
 }
 
+.about-main-visual img{
+    width: 40%;
+    border:2px solid;
+    margin-top: 10px;
+    padding:0px;
+    border-radius: 15px;
+    border-color: #D3F6ED;
+  }
+
 /*------------------------------------------------
 背景画像
 -------------------------------------------------*/
 
 #home {
     background-image: url(../img/background.png);
+    min-height: 90vh;
+}
+
+#about-home {
+    background-image: url(../img/background2.png);
     min-height: 90vh;
 }
 
@@ -135,3 +149,44 @@ img {
     width: 200px;
     height: auto;
 }
+
+.container4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-left: -575px;
+}
+
+.graphic4 {
+    position: absolute;
+    width: 25%; 
+    height: auto;
+    will-change: transform; 
+    transform:rotate(-15deg);
+}
+
+.container5 {
+    position: relative;
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -530px;
+    margin-left: 1250px;
+}
+
+.graphic5 {
+    position: absolute;
+    width: 50%; 
+    height: auto;
+    will-change: transform; 
+}
+
+/*------------------------------------------------
+aboutテキスト
+-------------------------------------------------*/
