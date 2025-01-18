@@ -75,7 +75,7 @@ a:hover {
 }
 
 .about-main-visual img{
-    width: 40%;
+    width: 400px;
     border:2px solid;
     margin-top: 10px;
     padding:0px;
@@ -92,7 +92,7 @@ a:hover {
     min-height: 90vh;
 }
 
-#about-home {
+#about {
     background-image: url(../img/background2.png);
     min-height: 90vh;
 }
@@ -202,5 +202,26 @@ a:hover {
 }
 
 /*------------------------------------------------
-aboutテキスト
+about
 -------------------------------------------------*/
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10rem;
+}
+
+#about .title {
+    text-align: left;
+}
+
+.about-text {
+    max-width: 600px; /* 最大幅を設定 */
+    margin: 0 auto; /* 水平方向の中央揃え */
+    margin-top: 310px;
+    margin-left: 110px;
+    text-align: center; /* テキストの中央揃え */
+}
+
+
+
