@@ -97,12 +97,12 @@ a:hover {
     min-height: 90vh;
 }
 
-#works-home {
+#works {
     background-image: url(../img/background2.png);
     min-height: 90vh;
 }
 
-#contact-home {
+#contact {
     background-image: url(../img/background2.png);
     min-height: 90vh;
 }
@@ -222,6 +222,25 @@ about
     margin-left: 110px;
     text-align: center; /* テキストの中央揃え */
 }
+/*------------------------------------------------
+works
+-------------------------------------------------*/
+#works .wrapper.content {
+    display: flex;
+    flex-wrap: wrap; /* 要素を折り返す */
+    justify-content: space-between; /* 要素間の余白を均等に配置 */
+    gap: 30px; /* 要素間の隙間 */
+}
 
+.works-item {
+    flex: 1 1 calc(33.333% - 20px); /* 横幅を3分割し、隙間を考慮 */
+    box-sizing: border-box; /* パディングを含めた計算にする */
+    text-align: center; /* 中央揃え（必要なら） */
+}
+
+.works-item img {
+    width: 100%; /* 画像の幅を親要素に合わせる */
+    height: auto; /* 画像の高さを自動調整 */
+}
 
 
