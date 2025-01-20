@@ -88,7 +88,7 @@ a:hover {
 -------------------------------------------------*/
 
 #home {
-    background-image: url(../img/background.png);
+    background-image: url(../img/background-1.png);
     min-height: 90vh;
 }
 
@@ -117,8 +117,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
-    margin-left: -450px;
+    margin-top: -80px;
+    margin-left: -550px;
 }
 
 .graphic1 {
@@ -130,18 +130,18 @@ a:hover {
 
 .container2 {
     position: relative;
-    width: 200px;
+    width: 300px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -450px;
-    margin-left: 1000px;
+    margin-top: -400px;
+    margin-left: 1100px;
 }
 
 .graphic2 {
     position: absolute;
-    width: 200px; 
+    width: 300px; 
     height: auto;
     will-change: transform; 
 }
@@ -154,13 +154,13 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 470px;
+    margin-top: 400px;
     perspective: 1000px;
 }
 
 .graphic3 {
     position: absolute;
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -208,19 +208,39 @@ about
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 10rem;
+    padding: 1.5rem 5rem;
 }
 
 #about .title {
     text-align: left;
 }
 
+#about p {
+    width: 100%;
+}
 .about-text {
-    max-width: 600px; /* 最大幅を設定 */
+    
+    max-width: 1200px; /* 最大幅を設定 */
     margin: 0 auto; /* 水平方向の中央揃え */
-    margin-top: 310px;
-    margin-left: 110px;
-    text-align: center; /* テキストの中央揃え */
+    margin-top: 30px;
+    margin-left: 60px;
+    text-align: left; /* テキストの中央揃え */
+}
+
+.myname, .hobbie, .career, .tool {
+    display: block; /* ブロック表示にする（既定値なので明示的に記載） */
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px; /* 下に余白を設定して改行 */
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
 /*------------------------------------------------
 works
