@@ -110,7 +110,7 @@ a:hover {
 /*------------------------------------------------
 グラフィック
 -------------------------------------------------*/
-.container1 {
+.circle3D {
     position: relative;
     width: 100%;
     height: 100%;
@@ -121,14 +121,14 @@ a:hover {
     margin-left: -550px;
 }
 
-.graphic1 {
+.GraphicCircle3D {
     position: absolute;
     width: 200px; 
     height: auto;
     will-change: transform; 
 }
 
-.container2 {
+.DistortedCircle {
     position: relative;
     width: 300px;
     height: 100%;
@@ -139,7 +139,7 @@ a:hover {
     margin-left: 1100px;
 }
 
-.graphic2 {
+.GraphicDistortedCircle {
     position: absolute;
     width: 300px; 
     height: auto;
@@ -147,7 +147,7 @@ a:hover {
 }
 
 
-.container3 {
+.OYlogo {
     position: relative;
     width: 100%;
     height: 100%;
@@ -158,13 +158,13 @@ a:hover {
     perspective: 1000px;
 }
 
-.graphic3 {
+.GraphicOYlogo {
     position: absolute;
     width: 150px;
     height: auto;
 }
 
-.container4 {
+.BearGraphic {
     position: relative;
     width: 100%;
     height: 100%;
@@ -175,7 +175,7 @@ a:hover {
     margin-left: -575px;
 }
 
-.graphic4 {
+.GraphicBearGraphic {
     position: absolute;
     width: 25%; 
     height: auto;
@@ -183,7 +183,7 @@ a:hover {
     transform:rotate(-15deg);
 }
 
-.container5 {
+.HeartGraphic {
     position: relative;
     width: 180px;
     height: 100%;
@@ -194,7 +194,7 @@ a:hover {
     margin-left: 1250px;
 }
 
-.graphic5 {
+.GraphicHeartGraphic {
     position: absolute;
     width: 50%; 
     height: auto;

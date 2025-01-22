@@ -1,99 +1,51 @@
 // DOMの読み込み後にアニメーション開始
 window.addEventListener('load', () => {
-    const element = document.querySelector('.graphic1');
-    
+    // 各要素に対応するクラス
+    const elements = [
+        { selector: '.GraphicCircle3D', hasRotation: false },
+        { selector: '.GraphicDistortedCircle', hasRotation: false },
+        { selector: '.GraphicBearGraphic', hasRotation: true },  // 回転を適用する要素
+        { selector: '.GraphicHeartGraphic', hasRotation: false }
+    ];
+
     // アニメーションパラメータ
     let amplitude = 3; // 浮遊の強さ
     let speed = 0.004; // 浮遊の速さ
-    let offsetY = 80; // Y軸方向の移動量
+    let offsetY = 80;  // Y軸方向の移動量
 
-    function animate() {
-        // サイン波で上下の浮遊を実現
-        offsetY = amplitude * Math.sin(Date.now() * speed);
+    // アニメーション処理
+    function animate(element, hasRotation) {
+        function animateElement() {
+            // サイン波で上下の浮遊を実現
+            offsetY = amplitude * Math.sin(Date.now() * speed);
 
-        // CSSに変換を適用
-        element.style.transform = `translateY(${offsetY}px)`;
+            // 回転を適用した場合、回転角度を追加
+            let transform = `translateY(${offsetY}px)`;
+            if (hasRotation) {
+                transform += ' rotate(-15deg)';
+            }
 
-        // アニメーションを継続
-        requestAnimationFrame(animate);
+            // CSSに変換を適用
+            element.style.transform = transform;
+
+            // アニメーションを継続
+            requestAnimationFrame(animateElement);
+        }
+
+        // 初期状態で回転を適用（.GraphicBearGraphic の場合）
+        if (hasRotation) {
+            element.style.transform = 'rotate(-15deg)';
+        }
+
+        // アニメーション開始
+        animateElement();
     }
 
-    // アニメーション開始
-    animate();
-});
-
-// DOMの読み込み後にアニメーション開始
-window.addEventListener('load', () => {
-    const element = document.querySelector('.graphic2');
-    
-    // アニメーションパラメータ
-    let amplitude = 3; // 浮遊の強さ
-    let speed = 0.004; // 浮遊の速さ
-    let offsetY = 80; // Y軸方向の移動量
-
-    function animate() {
-        // サイン波で上下の浮遊を実現
-        offsetY = amplitude * Math.sin(Date.now() * speed);
-
-        // CSSに変換を適用
-        element.style.transform = `translateY(${offsetY}px)`;
-
-        // アニメーションを継続
-        requestAnimationFrame(animate);
-    }
-
-    // アニメーション開始
-    animate();
-});
-
-// DOMの読み込み後にアニメーション開始
-window.addEventListener('load', () => {
-    const element = document.querySelector('.graphic4');
-    
-    // アニメーションパラメータ
-    let amplitude = 3; // 浮遊の強さ
-    let speed = 0.004; // 浮遊の速さ
-    let offsetY = 80; // Y軸方向の移動量
-
-    function animate() {
-        // サイン波で上下の浮遊を実現
-        offsetY = amplitude * Math.sin(Date.now() * speed);
-
-        // CSSに変換を適用 (浮遊 + -15度の回転)
-        element.style.transform = `translateY(${offsetY}px) rotate(-15deg)`;
-
-        // アニメーションを継続
-        requestAnimationFrame(animate);
-    }
-
-    // 初期状態で回転を適用
-    element.style.transform = `rotate(-15deg)`;
-
-    // アニメーション開始
-    animate();
-});
-
-
-// DOMの読み込み後にアニメーション開始
-window.addEventListener('load', () => {
-    const element = document.querySelector('.graphic5');
-    
-    // アニメーションパラメータ
-    let amplitude = 3; // 浮遊の強さ
-    let speed = 0.004; // 浮遊の速さ
-    let offsetY = 80; // Y軸方向の移動量
-
-    function animate() {
-        // サイン波で上下の浮遊を実現
-        offsetY = amplitude * Math.sin(Date.now() * speed);
-
-        // CSSに変換を適用
-        element.style.transform = `translateY(${offsetY}px)`;
-
-        // アニメーションを継続
-        requestAnimationFrame(animate);
-    }
-
-    // アニメーション開始
-    animate();
+    // 各要素にアニメーションを適用
+    elements.forEach(({ selector, hasRotation }) => {
+        const element = document.querySelector(selector);
+        if (element) {
+            animate(element, hasRotation);
+        }
+    });
 });
