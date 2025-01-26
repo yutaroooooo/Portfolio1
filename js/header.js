@@ -1,12 +1,12 @@
-function loadHeader() {
-    fetch('../header.html')
+window.addEventListener('load', () => {
+    // header.htmlを非同期で取得
+    fetch('header.html')
         .then(response => response.text())
-        .then(html => {
-            document.querySelector('header').innerHTML = html; 
+        .then(data => {
+            // 取得したHTMLを<header></header>タグに挿入
+            document.querySelector('header').innerHTML = data;
         })
         .catch(error => {
-            console.error('ヘッダーの読み込みエラー:', error);
+            console.error('ヘッダーの読み込みに失敗しました:', error);
         });
-}
-
-document.addEventListener('DOMContentLoaded', loadHeader);
+});

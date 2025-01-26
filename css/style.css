@@ -11,6 +11,7 @@ body {
     font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
     line-height: 1.7;
     color: #ffffff;
+    height: 100%;
 }
 
 a {
@@ -171,7 +172,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
+    margin-top: -150px;
     margin-left: -575px;
 }
 
