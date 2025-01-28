@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+/*------------------------------------------------
+共通部分
+-------------------------------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #ffffff;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*------------------------------------------------
+ヘッダー
+-------------------------------------------------*/
+.logo {
+    width: 50px;
+    margin-top: 14px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 23px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #000;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px 0 200px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+a:hover {
+    color: #8F87AB;
+  }
+/*------------------------------------------------
+メインビジュアル
+-------------------------------------------------*/
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    padding-top: 50px;
+    padding-left: 0px;
+}
+
+.main-visual img {
+    width: 100%;
+}
+
+.about-main-visual img{
+    width: 400px;
+    border:2px solid;
+    margin-top: 10px;
+    padding:0px;
+    border-radius: 15px;
+    border-color: #D3F6ED;
+  }
+
+/*------------------------------------------------
+背景画像
+-------------------------------------------------*/
+
+#home {
+    background-image: url(../img/background-1.png);
+    min-height: 90vh;
+}
+
+#about {
+    background-image: url(../img/background2.png);
+    min-height: 90vh;
+}
+
+#works {
+    background-image: url(../img/background2.png);
+    min-height: 90vh;
+}
+
+#contact {
+    background-image: url(../img/background2.png);
+    min-height: 90vh;
+}
+
+/*------------------------------------------------
+グラフィック
+-------------------------------------------------*/
+.circle3D {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    margin-left: -550px;
+}
+
+.GraphicCircle3D {
+    position: absolute;
+    width: 200px; 
+    height: auto;
+    will-change: transform; 
+}
+
+.DistortedCircle {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -400px;
+    margin-left: 1100px;
+}
+
+.GraphicDistortedCircle {
+    position: absolute;
+    width: 300px; 
+    height: auto;
+    will-change: transform; 
+}
+
+
+.OYlogo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    perspective: 1000px;
+}
+
+.GraphicOYlogo {
+    position: absolute;
+    width: 150px;
+    height: auto;
+}
+
+.BearGraphic {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    margin-left: -575px;
+}
+
+.GraphicBearGraphic {
+    position: absolute;
+    width: 25%; 
+    height: auto;
+    will-change: transform; 
+    transform:rotate(-15deg);
+}
+
+.HeartGraphic {
+    position: relative;
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -530px;
+    margin-left: 1250px;
+}
+
+.GraphicHeartGraphic {
+    position: absolute;
+    width: 50%; 
+    height: auto;
+    will-change: transform; 
+}
+
+/*------------------------------------------------
+about
+-------------------------------------------------*/
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+}
+
+#about .title {
+    text-align: left;
+}
+
+#about p {
+    width: 100%;
+}
+.about-text {
+    
+    max-width: 1200px; /* 最大幅を設定 */
+    margin: 0 auto; /* 水平方向の中央揃え */
+    margin-top: 30px;
+    margin-left: 60px;
+    text-align: left; /* テキストの中央揃え */
+}
+
+.myname, .hobbie, .career, .tool {
+    display: block; /* ブロック表示にする（既定値なので明示的に記載） */
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px; /* 下に余白を設定して改行 */
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+/*------------------------------------------------
+works
+-------------------------------------------------*/
+#works .wrapper.content {
+    display: flex;
+    flex-wrap: wrap; /* 要素を折り返す */
+    justify-content: space-between; /* 要素間の余白を均等に配置 */
+    gap: 30px; /* 要素間の隙間 */
+}
+
+.works-item {
+    flex: 1 1 calc(33.333% - 20px); /* 横幅を3分割し、隙間を考慮 */
+    box-sizing: border-box; /* パディングを含めた計算にする */
+    text-align: center; /* 中央揃え（必要なら） */
+}
+
+.works-item img {
+    width: 100%; /* 画像の幅を親要素に合わせる */
+    height: auto; /* 画像の高さを自動調整 */
+}
+
+/*------------------------------------------------
+contact
+-------------------------------------------------*/
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.contact-form {
+    padding: 20px 30px;
+    margin-top: -80px;
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin-left: 350px;
+    background-color: #8F87AB;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #7e9cca;
+}
+
+#name,#email,#tel {
+    width: 300px;
+}
+
